@@ -8,16 +8,13 @@ import java.util.Vector;
  * @author Deus
  */
 public class report_de_pessoas {
-	/**
-	 * a string para somar todos os nomes na lista 
-	 */
-	static String _s;
 	
 	/**
 	 * imprime a lista de pessoas
 	 * @param paramL
 	 */
 	public static void print_e_vai(Vector paramL){
+		String s = "";
 		
 		for (int i = 0; i < paramL.size(); i++) {
 			
@@ -27,14 +24,14 @@ public class report_de_pessoas {
 			
 			if(!erro.isEmpty())
 				continue;
-			if(_s == null)
-				_s = p.name;
+			if(s == null)
+				s = p.name;
 			else			
-				_s += ", " + p.name;			
+				s += ", " + p.name;			
 		}
 		//remove first comma
 		//_s = _s.substring(2); 
-		System.out.print(_s);
+		System.out.print(s);
 	}
 	
 	/**
