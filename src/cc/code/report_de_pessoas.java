@@ -27,11 +27,13 @@ public class report_de_pessoas {
 			
 			if(!erro.isEmpty())
 				continue;
-			
-		    _s += ", " + p.name;			
+			if(_s == null)
+				_s = p.name;
+			else			
+				_s += ", " + p.name;			
 		}
 		//remove first comma
-		_s = _s.substring(2); 
+		//_s = _s.substring(2); 
 		System.out.print(_s);
 	}
 	
