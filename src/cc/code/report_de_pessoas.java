@@ -35,7 +35,7 @@ public class report_de_pessoas {
 		System.out.print(_s);
 	}
 
-	private static void concatenaPessoa(Pessoa p) {
+	public static void concatenaPessoa(Pessoa p) {
 		if(_s == null)
 			_s = p.name;
 		else			
