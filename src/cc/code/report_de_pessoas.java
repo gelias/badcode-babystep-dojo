@@ -13,6 +13,10 @@ public class report_de_pessoas {
 	 */
 	static String _s;
 	
+	public report_de_pessoas() {
+		_s = null;
+	}
+	
 	/**
 	 * imprime a lista de pessoas
 	 * @param paramL

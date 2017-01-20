@@ -19,4 +19,20 @@ public class report_de_pessoasTest {
 		
 		assertEquals("Juarez", report_de_pessoas._s);
 	}
+	
+	@Test
+	public void deveConcatenarMaisDeUmaPessoa() {
+		report_de_pessoas report = new report_de_pessoas();
+		
+		Pessoa p = new Pessoa();
+		p.name = "Juarez";
+		
+		Pessoa p2 = new Pessoa();
+		p2.name = "Balboa";
+		
+		report.concatenaPessoa(p);
+		report.concatenaPessoa(p2);
+		
+		assertEquals("Juarez, Balboa", report_de_pessoas._s);
+	}
 }
