@@ -15,7 +15,7 @@ public class report_de_pessoasTest {
 		Pessoa p = new Pessoa();
 		p.name = "Juarez";
 		String _s = null;
-		_s = report_de_pessoas.concatenaPessoa(p, _s);
+		_s = report_de_pessoas.concatenaNomePessoa(p, _s);
 		
 		assertEquals("Juarez", _s);
 	}
@@ -28,11 +28,11 @@ public class report_de_pessoasTest {
 		
 		Pessoa p = new Pessoa();
 		p.name = "Juarez";
-		_s = report.concatenaPessoa(p, null);		
+		_s = report.concatenaNomePessoa(p, null);		
 		
 		Pessoa p2 = new Pessoa();
 		p2.name = "Balboa";
-		_s = report.concatenaPessoa(p2, _s);
+		_s = report.concatenaNomePessoa(p2, _s);
 		
 		assertEquals("Juarez, Balboa", _s);
 	}
