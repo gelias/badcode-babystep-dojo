@@ -21,6 +21,11 @@ public class report_de_pessoasTest {
 	}
 	
 	@Test
+	public void devePrintarNomesConcatenatos() {
+		
+	}
+	
+	@Test
 	public void deveConcatenarMaisDeUmaPessoa() {
 		report_de_pessoas report = new report_de_pessoas();
 
