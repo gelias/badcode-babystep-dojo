@@ -60,7 +60,14 @@ public class report_de_pessoas {
 		ArrayList<String> danielTelefonesFixos = new ArrayList<String>();
 		danielTelefonesFixos.add("8765343");
 		p.telefonesCelulares = danielTelefonesFixos;
-		v.add(p);
+		
+		Pessoa p2 = new Pessoa();
+		p2.name = "João";
+		p2.cpf = "123123123";
+		ArrayList<String> joaoTelefonesFixos = new ArrayList<String>();
+		joaoTelefonesFixos.add("98765135");
+		p2.telefonesCelulares = joaoTelefonesFixos;
+		v.add(p2);
 		
 		print_e_vai(v);
 		
