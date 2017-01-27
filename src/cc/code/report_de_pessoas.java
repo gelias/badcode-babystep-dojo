@@ -32,14 +32,14 @@ public class report_de_pessoas {
 			if(!erro.isEmpty())
 				continue;
 			
-			concatenaPessoa(p);			
+			concatenaPessoa(p, null);			
 		}
 		//remove first comma
 		//_s = _s.substring(2); 
 		System.out.print(_s);
 	}
 
-	public static void concatenaPessoa(Pessoa p) {
+	public static void concatenaPessoa(Pessoa p, String nomeLista) {
 		if(_s == null)
 			_s = p.name;
 		else			

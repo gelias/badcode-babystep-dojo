@@ -15,7 +15,7 @@ public class report_de_pessoasTest {
 		Pessoa p = new Pessoa();
 		p.name = "Juarez";
 		
-		report_de_pessoas.concatenaPessoa(p);
+		report_de_pessoas.concatenaPessoa(p, null);
 		
 		assertEquals("Juarez", report_de_pessoas._s);
 	}
@@ -30,8 +30,8 @@ public class report_de_pessoasTest {
 		Pessoa p2 = new Pessoa();
 		p2.name = "Balboa";
 		
-		report.concatenaPessoa(p);
-		report.concatenaPessoa(p2);
+		report.concatenaPessoa(p, null);
+		report.concatenaPessoa(p2, null);
 		
 		assertEquals("Juarez, Balboa", report_de_pessoas._s);
 	}
